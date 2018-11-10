@@ -30,7 +30,7 @@ class Squares extends Component {
     render() {
         return (
             <div className="container-fluid">
-                <div>
+                <div className= "band">
                     <div className="container boxes">
                         <div className="style_prevu_kit" style={box1}><p className="boxText">Coming Soon!!!!!!</p></div>
                         <div className="style_prevu_kit" style={box2}><p className="boxText">Coming Soon!!!!!!</p></div>
@@ -38,7 +38,8 @@ class Squares extends Component {
                         <div className="style_prevu_kit" style={box4}><p className="boxText">Coming Soon!!!!!!</p></div>
                         <div className="style_prevu_kit" style={box5}><p className="boxText">Coming Soon!!!!!!</p></div>
                         <div className="style_prevu_kit" style={box6}><p className="boxText">Coming Soon!!!!!!</p></div>
-                        <i class="feature-icon fas fa-grin-stars"></i>
+                        
+                        
                     </div>
                 </div>
                 <hr />
