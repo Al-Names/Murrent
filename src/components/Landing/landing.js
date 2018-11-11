@@ -6,6 +6,8 @@ import "./landing.css";
 import Header from '../header'
 import Squares from '../squares';
 
+import Feed from '../feed'
+
 class Landing extends Component {
     render() {
         return (
@@ -30,12 +32,20 @@ class Landing extends Component {
                         </ul>
                     </div>
                 </div>
-                <hr/>
+                <hr />
+                <div className="row container center-block">
+                    <div>
+                        <h3 className="text-center col-lg-6 rulesText aboutText">Sign In</h3>
+                    </div>
+                    <div>
+                        <h3 className="text-center col-lg-6 aboutText rulesText">Sign Up</h3>
+                    </div>
+                </div>
             </div>
 
 
-                );
-              }
-            }
-            
-            export default Landing;
+        );
+    }
+}
+
+export default Landing;
