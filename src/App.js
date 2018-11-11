@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 // import './App.css';
 import "./murrent.css";
 
-import Navbar from './components/navbar';
+import Navbar from './components/nav/navbar';
 import Footer from './components/footer'
 
 import Landing from './components/Landing/landing';
