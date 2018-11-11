@@ -3,8 +3,10 @@ import React, { Component } from 'react';
 // import './App.css';
 import "./landing.css";
 
-import Header from '../header'
+import Header from '../header';
 import Squares from '../squares';
+
+import Feed from '../feed';
 
 class Landing extends Component {
     render() {
@@ -31,6 +33,7 @@ class Landing extends Component {
                     </div>
                 </div>
                 <hr/>
+                <Feed/>
             </div>
 
 
