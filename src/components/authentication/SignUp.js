@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+
 import "./styles.css";
 import LoginBanner from "./LoginBanner";
 class SignUp extends Component {
@@ -72,10 +74,17 @@ class SignUp extends Component {
                 </label>
               </div>
             </div>
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn btn-success">
               Sign in
             </button>
           </form>
+          <hr />
+          <div>
+            Already have an account?
+            <span className="login-link">
+              <Link to="/login"> Sign In </Link>
+            </span>
+          </div>
         </div>
       </div>
     );
