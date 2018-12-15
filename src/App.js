@@ -1,22 +1,33 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 // import './App.css';
 import "./murrent.css";
+import { BrowserRouter } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router";
 
-import Navbar from './components/navbar';
-import Footer from './components/footer'
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
-import Landing from './components/Landing/landing';
+import Landing from "./components/Landing/landing";
+import LogIn from "./components/authentication/LogIn";
+import SignUp from "./components/authentication/SignUp";
 
 class App extends Component {
   render() {
     return (
-      <div class="container-fluid"> 
-           <Navbar/>
-           <Landing/>
-           <Footer/>
+      <div className="App container-fluid">
+        <Navbar />
+        <BrowserRouter>
+          <div>
+            <Switch>
+              <Route exact path="/" component={Landing} />
+              <Route exact path="/login" component={LogIn} />
+              <Route exact path="/register" component={SignUp} />
+            </Switch>
+            <Footer />
+          </div>
+        </BrowserRouter>
       </div>
-
     );
   }
 }
