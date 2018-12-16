@@ -8,8 +8,8 @@ class LogIn extends Component {
   render() {
     return (
       <div>
-        <LoginBanner />
         <div className="login-wrapper">
+          <h2 className="log-text">Log In</h2>
           <form action="">
             <div className="form-group">
               <label for="email">Username</label>

@@ -50,18 +50,6 @@ class Landing extends Component {
           </div>
         </div>
         <hr />
-        <div className="row container center-block">
-          <div>
-            <h3 className="text-center col-lg-6 rulesText aboutText">
-              Sign In
-            </h3>
-          </div>
-          <div>
-            <h3 className="text-center col-lg-6 aboutText rulesText">
-              Sign Up
-            </h3>
-          </div>
-        </div>
       </div>
     );
   }

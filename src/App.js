@@ -13,12 +13,20 @@ import LogIn from "./components/authentication/LogIn";
 import SignUp from "./components/authentication/SignUp";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isNavbarHidden: false
+    };
+  }
+
   render() {
     return (
       <div className="App container-fluid">
-        <Navbar />
         <BrowserRouter>
           <div>
+            <Navbar />
+
             <Switch>
               <Route exact path="/" component={Landing} />
               <Route exact path="/login" component={LogIn} />

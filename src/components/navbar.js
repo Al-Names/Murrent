@@ -1,39 +1,65 @@
 import React, { Component } from "react";
+import { NavLink, Link } from "react-router-dom";
 
 // import './App.css';
 import "../murrent.css";
 
 class Navbar extends Component {
   render() {
+    if (window.location.pathname === "/login")
+      return (
+        <nav className="navbar navbar-default navbar-fixed-top amatic">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="/">
+                Murrent
+              </a>
+            </div>
+          </div>
+        </nav>
+      );
+    if (window.location.pathname === "/register")
+      return (
+        <nav className="navbar navbar-default navbar-fixed-top amatic">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="/">
+                Murrent
+              </a>
+            </div>
+          </div>
+        </nav>
+      );
+
     return (
-      <nav class="navbar navbar-default navbar-fixed-top amatic">
-        <div class="container-fluid">
-          <div class="navbar-header">
+      <nav className="navbar navbar-default navbar-fixed-top amatic">
+        <div className="container-fluid">
+          <div className="navbar-header">
             <button
               type="button"
-              class="navbar-toggle collapsed"
+              className="navbar-toggle collapsed"
               data-toggle="collapse"
               data-target="#bs-example-navbar-collapse-1"
               aria-expanded="false"
             >
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar" />
-              <span class="icon-bar" />
-              <span class="icon-bar" />
+              <span className="sr-only">Toggle navigation</span>
+              <span className="icon-bar" />
+              <span className="icon-bar" />
+              <span className="icon-bar" />
             </button>
-            <a class="navbar-brand" href="#">
+            <a className="navbar-brand" href="/">
               Murrent
             </a>
           </div>
 
           <div
-            class="collapse navbar-collapse"
+            className="collapse navbar-collapse"
             id="bs-example-navbar-collapse-1"
           >
-            <ul class="nav navbar-nav">
-              <li class="active">
+            <ul className="nav navbar-nav">
+              <li className="">
                 <a href="#">
-                  About <span class="sr-only">(current)</span>
+                  About <span className="sr-only">(current)</span>
                 </a>
               </li>
               <li>
@@ -42,25 +68,13 @@ class Navbar extends Component {
               <li>
                 <a href="#">Posts</a>
               </li>
-              <li class="dropdown">
-                <a
-                  href="#"
-                  class="dropdown-toggle"
-                  data-toggle="dropdown"
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  More<span class="caret" />
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="#">Current Mood</a>
-                  </li>
-                  <li>
-                    <a href="#">Contact</a>
-                  </li>
-                </ul>
+            </ul>
+            <ul className="nav navbar-nav navbar-right">
+              <li>
+                <a href="/register">Register</a>
+              </li>
+              <li>
+                <a href="/login">Login</a>
               </li>
             </ul>
           </div>

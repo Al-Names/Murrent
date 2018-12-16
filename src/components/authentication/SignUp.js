@@ -7,8 +7,8 @@ class SignUp extends Component {
   render() {
     return (
       <div>
-        <LoginBanner />
         <div className="register-wrapper">
+          <h2 className="log-text">Sign Up</h2>
           <form>
             <div className="form-row">
               <div className="form-group col-md-6">
@@ -61,21 +61,31 @@ class SignUp extends Component {
                 />
               </div>
             </div>
+            <div className="form-group">
+              <label for="confirmPassword">Confirm Password</label>
+              <input
+                type="password"
+                className="form-control"
+                id="confirmPassword"
+                placeholder="******"
+                style={{ width: "45%", margin: "0 auto" }}
+              />
+            </div>
 
             <div className="form-group">
               <div className="form-check">
+                <label className="form-check-label" for="gridCheck">
+                  Remember my details
+                </label>
                 <input
                   className="form-check-input"
                   type="checkbox"
                   id="gridCheck"
                 />
-                <label className="form-check-label" for="gridCheck">
-                  Check me out
-                </label>
               </div>
             </div>
             <button type="submit" className="btn btn-success">
-              Sign in
+              Register
             </button>
           </form>
           <hr />
